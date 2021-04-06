@@ -1,0 +1,16 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "12345678",
+    "database": "graphql-node-test-base",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "dist/**/**/*.model.js"
+    ],
+    "migrations": [
+       "dist/migration/*.js"
+    ]
+ }

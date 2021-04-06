@@ -1,0 +1,28 @@
+type Query {
+  events: [Event!]
+  event(id: Int): Event
+}
+
+type Mutation {
+  createEvent(event: EventInput): Event
+  updateEvent(event: EventInput): Event
+  deleteEvent(id:   Int): Int
+  addGuest(personId: Int): Event
+}
+
+type Event {
+  id: Int!
+  name: String!
+  description: String
+  maxNumberOfGuests: Int!
+  date: String!
+  createdAt: String
+  updatedAt: String
+}
+
+input EventInput {
+  name: String!
+  description: String
+  maxNumberOfGuests: Int!
+  date: String!
+}

@@ -1,0 +1,25 @@
+{people { id, name }}
+
+{person(id: 5) {id, name}}
+
+mutation {
+  createPerson(person: {
+    name: "novo registro",
+    address: "teste endereco",
+    email: "teste email",
+    birthDate: "01/01/1995",
+    phoneNumber: "(47) 99712757777"
+  }) {
+    id,
+    name
+  }
+}
+
+mutation {
+  deletePerson(id: 5) {
+    id,
+    name
+  }
+}
+
+{ login(username: "admin", password: "admin") }
