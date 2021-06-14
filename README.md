@@ -12,7 +12,7 @@ Para rodar o script de migração, primeiramente deve dar start no servidor para
 $ npm run typeorm migration:run
 
 
-## Installation
+## Instalação
 
 ```bash
 $ npm install
