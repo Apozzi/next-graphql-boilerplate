@@ -18,7 +18,7 @@ $ npm run typeorm migration:run
 $ npm install
 ```
 
-## Running the app
+## Rodando o app
 
 ```bash
 # development
@@ -31,7 +31,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Teste
 
 ```bash
 # unit tests
